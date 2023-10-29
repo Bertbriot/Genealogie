@@ -1,0 +1,67 @@
+@charset "iso-8859-1";
+/* auteur: Bertrand MAILLARD */
+/* Date de modification: 13-05-2005 */
+html {margin: 0px; border: 0px; padding: 0px} /* comptibilité XHTML */
+
+body {font-family:Arial, Helvetica, sans-serif; font-size:11pt}
+body.principal, body.quartier, body.cousin, body.eclair {background-color: #99FFCC;	color: inherit; margin-top: 5pt}
+body.eclair {font-size: 9pt;}
+body.titre {margin-top:0pt; margin-left:0pt; margin-right:0pt; background-color:#99CCFF; color:inherit}
+body.carte  {background-color: #99FFCC; border-width: 0pt; margin: 0pt; padding: 1pt 6pt 6pt 6pt}
+body.avecmenu {margin: 0px; padding: 0px}
+
+table.carte {border: 5pt solid blue; width:0%}
+td.carte {padding:0pt}
+img.carte {border-width:0pt; vertical-align:top}
+img.icone {border-width:0pt; vertical-align:top}
+img.desc {vertical-align: top; border-color: black; border: 3pt solid black}
+
+/* Menu fixe en CCS */
+.menufixe {position: absolute; background-color: #99CCFF; text-align: center; top: 0px; 
+	left: 0px; height: 60px; width: 100%; border-bottom: 1px solid black}
+.menufixequartier {position: absolute; background-color: #99CCFF; text-align: center; top: 0px; 
+	left: 0px; height: 80px; width: 100%; border-bottom: 1px solid black}
+html>body .menufixe {position: fixed}
+html>body .menufixequartier {position: fixed}
+.page {background-color: #99FFCC; padding-left: 5px; padding-top: 60px}
+.pagequartier {background-color: #99FFCC; padding-left: 5px; padding-top: 80px}
+.ancre {top: -45px; position: relative}
+.ang {top: -60px; position: relative}  /* ancre génération quartiers */
+.ans {top: -75px; position: relative}  /* ancre sosa quartiers */
+
+/* Application du maj à toute balise pour adaptation XHTML */
+.Adh {background-color:transparent; color:red; font-weight:bold; font-size:9pt}
+.maj {background-color:transparent; font-family:Arial, Helvetica, sans-serif; color:red; font-weight:bold; font-size:10pt}
+.lieu {background-color:transparent; font-family:Arial, Helvetica, sans-serif; color:blue; font-weight:bold; font-size:10pt}
+
+ol {font-weight:bold; font-size:11pt}
+ul {font-weight:normal; font-size:10pt; line-height:normal; list-style-type:disc; margin-top:10pt; margin-bottom:10pt}
+ul.index {font-weight:normal; font-size:11pt; line-height:2; list-style-type:disc}
+
+address {font-weight:normal; font-size:11pt}
+
+a.eclair {
+	font-size: 10pt;
+	color: Black;
+	text-decoration: underline;
+}
+a.eclair:hover {font-weight: bold;	color: Navy}
+
+h2 {font-weight:bold; font-size:20pt; text-align:center; margin-bottom:0}
+h3 {font-weight:bold; font-size:16pt; text-align:center; margin-bottom:0}
+h3.quartier, h3.cousin {font-family:cursive; font-weight:600; margin-bottom:10pt; margin-top:10pt}
+h3.titre {font-family:cursive; font-size:14pt; font-weight:600; margin-bottom:5pt; margin-top:5pt}
+h3.principal, h3.dep, h3.carte, h3.desc, h3.lien {font-family:cursive; font-size:14pt; font-weight:600; text-align:left; margin-bottom:5pt; margin-top:5pt}
+h4.principal, h4.dep {font-family:cursive; font-size:12pt; font-weight:600; margin-bottom:5pt; margin-top:5pt}
+h5 {font-weight:bold; font-size:10pt; margin-bottom:5pt; margin-top:5pt}
+
+table {width: 100%; border-color: black; border-collapse: collapse; border-width: 1pt;}
+td {width:50%; font-size:9pt; color:black; border-collapse:collapse; border-color:black; border-width:1pt; padding-left:5pt; padding-right:5pt; padding-top:5pt; padding-bottom:5pt}
+td.femme {background-color:#FFCCFF}
+td.homme {background-color:#66CCFF}
+
+/* Style pour les pages titres */
+td.titre {text-align:center; height:14pt; padding-top:0; padding-bottom:0}
+.lien {position: relative; top: -3pt; background-color:transparent; color: #000000; font-size: 8pt; font-family: verdana, cursive;  font-weight: bold; letter-spacing: -1pt; text-decoration:none}
+.divise {position: relative; top: -3pt; background-color:transparent; color: #000000; font-size: 12pt;}
+a.lien:hover {color: Red}
